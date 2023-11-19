@@ -1,0 +1,15 @@
+.toolpanel-container {
+  box-sizing: border-box;
+  width: 202px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  padding: .5rem;
+
+  .toolpanel-item-title {
+    margin-bottom: 8px;
+  }
+
+  .ant-form-item-label label {
+    font-size: .75rem;
+  }
+}

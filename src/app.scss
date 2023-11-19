@@ -1,0 +1,36 @@
+.app {
+  padding: 1rem;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+  z-index: 2;
+  // position: fixed;
+  pointer-events: var(--pointerEvents);
+}
+
+aside {
+  position: fixed;
+  left: 1rem;
+  top: calc(1rem + 60px);
+  display: inline-block;
+  pointer-events: var(--pointerEvents);
+  z-index: 2;
+  background-color: #fff;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+}
