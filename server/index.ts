@@ -8,8 +8,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://127.0.0.1:5173", // 明确指定允许的源
-    credentials: true // 允许凭证
+    origin: "http://localhost:5173", // 明确指定允许的源
+    credentials: true, // 允许凭证
   }
 });
 
@@ -44,8 +44,8 @@ io.on('connection', (socket) => {
 });
 
 app.use(cors({
-  origin: "http://127.0.0.1:5173", // 明确指定允许的源
-  credentials: true // 允许凭证
+  origin: "http://localhost:5173", // 明确指定允许的源
+  credentials: true, // 允许凭证
 }));
 server.listen(5001, () => {
   console.log('Server is running on http://localhost:5001');
